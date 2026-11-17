@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-dull: #2563eb;
+  --color-light: #131b2e;
+  --color-borderColor: #26334d;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+/* === Dark Mode Styling === */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  background-color: #0b0f19 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Surfaces & Light Backgrounds -> Deep Navy/Slate */
+.bg-white {
+  background-color: #131b2e !important;
+  color: #f1f5f9 !important;
+}
+
+.bg-light,
+.bg-gray-50,
+.bg-slate-50,
+.bg-zinc-50,
+.bg-neutral-50 {
+  background-color: #0f1626 !important;
+}
+
+.bg-gray-100,
+.bg-slate-100,
+.bg-zinc-100 {
+  background-color: #1b253b !important;
+}
+
+.bg-gray-200,
+.bg-slate-200 {
+  background-color: #283552 !important;
+}
+
+/* Text Colors -> Crisp Light Hierarchy */
+.text-black,
+.text-gray-900,
+.text-slate-900,
+.text-zinc-900,
+.text-gray-800,
+.text-slate-800 {
+  color: #f8fafc !important;
+}
+
+.text-gray-700,
+.text-slate-700,
+.text-gray-600,
+.text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.text-gray-500,
+.text-slate-500,
+.text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+/* Borders & Dividers */
+.border,
+.border-b,
+.border-t,
+.border-l,
+.border-r,
+.border-borderColor,
+.border-gray-100,
+.border-gray-200,
+.border-gray-300,
+.border-slate-200,
+.border-slate-300 {
+  border-color: #26334d !important;
+}
+
+/* Inputs, Selects & Textareas */
+input,
+select,
+textarea {
+  background-color: #0f1626 !important;
+  color: #f8fafc !important;
+  border-color: #2e3d5c !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Hover States */
+.hover\:bg-gray-50:hover,
+.hover\:bg-gray-100:hover,
+.hover\:bg-slate-50:hover,
+.hover\:bg-slate-100:hover {
+  background-color: #1e293b !important;
+}
+
+/* Shadows & Dark SVG Icons */
+.shadow,
+.shadow-sm,
+.shadow-md,
+.shadow-lg,
+.shadow-xl {
+  --tw-shadow-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Invert monochrome black UI icons (menu, close, search, arrows) so they remain visible on dark backgrounds */
+img[src*="menu_icon"],
+img[src*="close_icon"],
+img[src*="search_icon"],
+img[src*="arrow_icon"],
+img[src*="filter_icon"],
+img[src*="eye_"] {
+  filter: invert(0.9) brightness(1.1);
+}
